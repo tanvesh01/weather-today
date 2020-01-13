@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+
+<header>
+    <h1><%= title %></h1>
+
+    <a href="/">Weather</a>
+    <a href="/about">About</a>
+    <a href="/help">Help</a>
+</header>
+
+<div class="main-content">
+    <p>Use this site to get your weather!</p>
+
+    <form>
+        <input placeholder="Location">
+        <button type="submit">Search</button>
+    </form>
+
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+
+</div>
+
+<%- include("partials/footer") -%>

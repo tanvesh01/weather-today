@@ -1,34 +1,51 @@
 body {
-    color: #333333;
+    background-color: #f6f6f6;
     font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
+    margin: 0;
+    height: 100%;
 }
 
-.main-content {
-    flex-grow: 1;
+.scrollable {
+    height: 100px;
+    /* or any value */
+    overflow-y: auto;
 }
 
-footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
+html {
+    margin: 0;
+    height: 100%;
 }
 
-header {
-    margin-top: 16px;
-    margin-bottom: 48px;
+p {
+    font-size: 35px;
+    text-align: center;
 }
 
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
+}
+
+#typeWriter {
+    font-family: 'Montserrat', sans-serif;
+    color: #5d13e7;
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#illustrations {
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: initial;
+}
+
+nav {
+    font-family: 'Libre Baskerville', serif;
+}
+
+#brand {
+    font-weight: 700;
 }
 
 header a {
@@ -46,10 +63,68 @@ input {
     padding: 8px;
 }
 
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
 button {
     cursor: pointer;
     border: 1px solid #888;
     background: #888;
     padding: 8px;
     color: white;
+}
+
+.bg-light {
+    background-color: #bdf2d5 !important;
+}
+
+.main-content {
+    color: #bdf2d5;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    background-color: #5d13e7;
+    width: 60%;
+    height: 400px;
+    margin-left: 20%;
+}
+
+input{
+    width: 60%;
+    margin-left: 17%;
+    font-weight: bold;
+    background-color: #f6f6f6;
+}
+
+.rounded {
+    border-radius: .50rem!important;
+}
+
+#message-1{
+    font-size: 20px;
+    font-weight:normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#message-2{
+    font-size: 20px;
+    font-weight:normal;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+#search{
+    background-color: #f6f6f6;
+    color: #5d13e7;
+}
+
+.spinner-border{
+    margin-left: 50%;
 }

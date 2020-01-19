@@ -1,26 +1,37 @@
 <%- include("partials/header") -%>
 
-<header>
-    <h1><%= title %></h1>
-
-    <a href="/">Weather</a>
-    <a href="/about">About</a>
-    <a href="/help">Help</a>
-</header>
-
-<div class="main-content">
-    <p>Use this site to get your weather!</p>
-
-    <form>
-        <input placeholder="Location">
-        <button type="submit">Search</button>
-    </form>
-
-    <p id="message-1"></p>
-    <p id="message-2"></p>
-
+<div class="row h-100 w-100">
+    <div class="col-8 ">
+        <div class="mb-5">
+            <div class="ml-5">
+                <h1 id="typeWriter">Weather</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="border rounded main-content">
+                <p class="mt-3">Use this site to get your weather!</p>
+                <form>
+                    <input class="rounded" placeholder="Location">
+                    <button class="rounded" id="search" type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <p class="mt-3" id="message-1">
+                    <div class="spinner-border" id="spinner" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </p>
+                <p class="mx-5" id="message-2"></p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-4 px-0  align-self-end">
+        <!-- <div class="border h-50 m-0 ">h</div> -->
+        <div>
+            <img class="w-100" src="img/illustrations/PlantDoodle.png" alt="PlantDoodle">
+        </div>
+        <!-- <img src="img/illustrations/PlantDoodle.png" alt="PlantDoodle"> -->
+    </div>
 </div>
-
 <script src="/js/client.js"></script>
 
 <%- include("partials/footer") -%>
